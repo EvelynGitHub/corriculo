@@ -1,2 +1,2 @@
-# corriculo
+# Currículo
 Meu currículo online
