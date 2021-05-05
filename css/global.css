@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0.548);
+
+    display: grid;
+    grid-template:
+                'perfil header header'
+                'perfil main main'
+                'perfil footer footer';
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+            
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+header{
+    grid-area: header;
+    background-color: #ddd;
+    height: 50px;
+}
+
+aside{
+    grid-area: perfil;
+    background-color:#ddd;
+
+    max-height: calc(100vh - 2rem);
+    min-height: calc(100vh - 2rem);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+}
+
+main{
+    grid-area: main;
+    background-color: #fff;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #ddd;
+    grid-column-start: 2;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfil-header{
+    background-color: #ccc;
+    height: 30%;
+}
+
+.perfil-info{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfil-personal {
+    margin: .5rem;
+    height: 60%;
+    background-color: #eee;
+}
+
+.perfil-social {
+    height: 50px;
+    background-color: #ccc;
+}
