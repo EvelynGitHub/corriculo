@@ -64,7 +64,25 @@ footer{
 .perfil-header{
     background-color: #ccc;
     height: 30%;
+    text-align: center;
 }
+
+.perfil-header .perfil-photo{
+    margin: .8rem auto .5rem;
+    height: 115px;
+    text-align: center;
+}
+.perfil-header .perfil-photo img{
+    height: 100%;
+    border-radius: 60px;
+    /* border-image: fill; */
+    /* border-color: 2px solid #fff; */
+}
+.perfil-header h4 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
 
 .perfil-info{
     height: 70%;
@@ -75,11 +93,59 @@ footer{
 
 .perfil-personal {
     margin: .5rem;
+    padding: .3rem;
     height: 60%;
     background-color: #eee;
+    font-size: .85rem;
+    position: relative;
 }
+
+.perfil-personal ul{
+    list-style: none ;
+    margin-left: .2rem;
+    text-align: left;
+}
+
+.perfil-personal ul li{
+    padding: .5rem 0;
+}
+
+.perfil-personal .cv-download{
+    margin: .5rem ;
+    text-align: center;
+}
+
+.perfil-personal .btn-download{
+    background-color: #fff;
+    /* box-shadow: 3px 3px 3px #aaa, -3px 3px 3px #aaa,-3px -3px 3px #aaa  ; */
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    bottom: .3rem;
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
+}
+
 
 .perfil-social {
     height: 50px;
     background-color: #ccc;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.perfil-social a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #222;
+}
+/* 
+.linkedin i { 
+    color: #0e76a8;   
+}
+
+.telegram i {
+    color: #24a3f8;   
+} */
