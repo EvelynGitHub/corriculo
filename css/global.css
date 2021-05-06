@@ -104,6 +104,10 @@ footer{
     background-color: #eee;
     font-size: .85rem;
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .perfil-personal ul{
