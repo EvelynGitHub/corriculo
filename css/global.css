@@ -127,7 +127,6 @@ footer{
 
 .perfil-personal .btn-download{
     background-color: #fff;
-    /* box-shadow: 3px 3px 3px #aaa, -3px 3px 3px #aaa,-3px -3px 3px #aaa  ; */
     text-decoration: none;
     color: #222;
     font-weight: bold;
@@ -150,14 +149,6 @@ footer{
     font-size: 2rem;
     color: #222;
 }
-/* 
-.linkedin i { 
-    color: #0e76a8;   
-}
-
-.telegram i {
-    color: #24a3f8;   
-} */
 
 header nav {
     display: flex;
@@ -209,4 +200,95 @@ header nav div ul li {
 header nav div ul li a{
     padding: .5rem;
     text-align: center;
+}
+
+main div h2,
+main div hr,
+main div p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #444;
+}
+
+main div h2{
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    font-size: x-large;
+}
+
+main div hr{
+    border: none;
+    border-top: 1px solid;
+}
+
+main div p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-indent: 2.5rem;
+    text-align: justify;
+}
+main div section > p:last-child{
+    padding-bottom: 1rem;
+}
+
+main .home{
+    width: 100%;
+}
+
+main .home > section:nth-child(even){
+    background-color:rgba(238, 238, 238, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 5px,
+    rgba(0, 0, 0, 0.1) 0px -3px 5px;
+}
+  
+main .home .home-stats{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.home-stats .img-stats{
+    width: 50%;
+}
+
+.home-cards{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.list-cards{
+    /* padding-right: 50px; */
+    margin: 1rem;
+    margin-bottom: 0;
+    display: inline-flex;
+}
+
+.card{
+    min-width: 230px;
+    min-height: 200px;
+    margin: 1rem;
+    padding: .5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 5px,
+    rgba(0, 0, 0, 0.1) 0px -3px 5px;
+}
+
+.card-icon{
+    font-size: 3rem;
+    color: #666;
+}
+
+.card-title{
+    font-size: 1.2rem;
+    color: #444;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.card-description{
+    margin: 0;
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 0;
+    line-height: 1.2rem;
 }
