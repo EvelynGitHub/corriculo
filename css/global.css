@@ -126,7 +126,6 @@ footer{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 5px;
 }
 
-
 .perfil-social {
     height: 50px;
     background-color: #ccc;
@@ -149,3 +148,55 @@ footer{
 .telegram i {
     color: #24a3f8;   
 } */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav a{
+    color: #222;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+header nav .menu-home{
+    height: 100%;
+    width: 50px;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav .menu-toggle{
+    height: 100%;
+    width: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div {
+    height: 100%;
+}
+
+header nav div ul {
+    list-style: none;
+    margin-right: .5rem;
+    height: 100%;
+}
+header nav div ul li {
+    display:inline-flex;
+    align-items: center;
+
+    margin: 0 .5rem;
+    height: 100%;
+}
+
+header nav div ul li a{
+    padding: .5rem;
+    text-align: center;
+}
