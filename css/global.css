@@ -218,7 +218,7 @@ main div h2{
 
 main div hr{
     border: none;
-    border-top: 1px solid;
+    border-top: 1px solid #999;
 }
 
 main div p {
@@ -261,6 +261,7 @@ main .home .home-stats{
     margin: 1rem;
     margin-bottom: 0;
     display: inline-flex;
+    padding: 1rem;
 }
 
 .card{
@@ -292,3 +293,129 @@ main .home .home-stats{
     text-indent: 0;
     line-height: 1.2rem;
 }
+
+.tecnologia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tecnologia .tec-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: .3rem;
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 5px,
+    rgba(0, 0, 0, 0.1) 0px -3px 5px;
+
+    width: 45%;
+}
+
+.tecnologia .tec-card .tec-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    font-size: small;
+}
+
+.tec-title p{
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0;
+    text-indent: 0;
+    font-weight: 600;
+}
+
+/* .tec-title a, */
+.tec-title a i{
+    text-decoration: none;
+    color: #444;
+    font-size: 1.3rem;
+}
+
+
+.tec-body{
+    margin-top: .5rem;
+    height: .8rem;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+}
+
+.progressbar{
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+
+
+/* INICIO COR CARD TEC */
+
+.tec-php .progressbar{
+    background: #767ab3;
+}
+
+.tec-php:hover{
+    transition: .3s box-shadow;
+    box-shadow:#767ab3 0px 0px 10px 2px;
+}
+
+.tec-css .progressbar{
+    background: #2750e6;
+}
+
+.tec-css:hover{
+    transition: .3s box-shadow;
+    box-shadow:#2750e6 0px 0px 10px 2px;
+}
+
+.tec-html .progressbar{
+    background: #e54c26;
+}
+
+.tec-html:hover{
+    transition: .3s box-shadow;
+    box-shadow:#e54c26 0px 0px 10px 2px;
+}
+
+.tec-js .progressbar{
+    background: #f1db4e;
+}
+
+.tec-js:hover{
+    transition: .3s box-shadow;
+    box-shadow:#f1db4e 0px 0px 10px 2px;
+}
+
+.tec-java .progressbar{
+    background: #ec3a22;
+}
+
+.tec-java:hover{
+    transition: .3s box-shadow;
+    box-shadow:#ec3a22 0px 0px 10px 2px;
+}
+
+.tec-csharp .progressbar{
+    background: #31007c;
+}
+
+.tec-csharp:hover{
+    transition: .3s box-shadow;
+    box-shadow:#31007c 0px 0px 10px 2px;
+}
+
+
+/* FIm COR CARD TEC */
