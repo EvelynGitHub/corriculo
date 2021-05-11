@@ -12,10 +12,12 @@ page.addEventListener('click', function(e){
 
     for(let index=0; index < pagesMain.length; index++){
         pagesMain[index].setAttribute('hidden', true)
+        pagesMain[index].classList.add('page')
     }
 
     let pageActive = document.querySelector('main .'+page)
     pageActive.removeAttribute('hidden')
+    pageActive.classList.remove('page')
 
 })
 
