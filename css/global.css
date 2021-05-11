@@ -248,7 +248,10 @@ main .resumo{
     width: 100%;
 }
 
-main .home > section:nth-child(even){
+main .home > section:nth-child(even),
+main .resumo > section:nth-child(even),
+main .portifolio > section:nth-child(even),
+main .contato > section:nth-child(even){
     background-color:rgba(238, 238, 238, 0.8);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 5px,
     rgba(0, 0, 0, 0.1) 0px -3px 5px;
@@ -532,3 +535,22 @@ main .home .home-stats{
 
 
 /* FIM: CSS da pagina de PORTIFOLIO */
+
+/* INICIO: CSS da pagina de CONTATO */
+
+.contato .contato-area {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #444;
+    font-size: 1.5rem;
+    background-color: #eee;
+}
+
+.contato .contato-area .contato-item {
+    margin: 1rem 0;
+    text-align: left;
+}
+
+/* FIM: CSS da pagina de CONTATO */
