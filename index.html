@@ -11,19 +11,21 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
 
+    <script src="js/index.js" defer></script>
+
     <title>CV-Online</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="menu-home" href="#"><i class="fas fa-home"></i></a>
+            <a class="menu-home" href="#Home" page="home"><i class="fas fa-home"></i></a>
             <div>
                 <a class="menu-toggle" href="#"><i class="fas fa-bars"></i></a>
                 <ul>
-                    <li><a href="#">Resumo</a></li>
-                    <li><a href="#">Portifólio</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#Resumo" page="resumo">Resumo</a></li>
+                    <li><a href="#Portifóio" page="portifolio">Portifólio</a></li>
+                    <li><a href="#Contato" page="contato">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,7 +78,7 @@
         </div>
     </aside>
     <main>
-        <div class="home" hidden>
+        <div class="page home" hidden>
             <section>
                 <h2>SOBRE</h2>
                 <hr>
@@ -218,7 +220,7 @@
                 </div>
             </section>
         </div>
-        <div class="resumo">
+        <div class="page resumo">
             <section>
                 <h2>EXPERIENCIAS ANTERIORES</h2>
                 <hr>
@@ -344,8 +346,8 @@
 
             </section>
         </div>
-        <div class="portifolio"></div>
-        <div class="contato"></div>
+        <div class="page portifolio"></div>
+        <div class="page contato"></div>
 
     </main>
 
