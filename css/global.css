@@ -65,6 +65,10 @@ footer{
     font-weight: bold;
 }
 
+.page{
+    display: none!important;
+}
+
 .perfil {
     display: flex;
     flex-direction: column;
@@ -232,7 +236,7 @@ main div p {
     margin-top: 1rem;
     font-size: 1.3rem;
     line-height: 2rem;
-    text-indent: 2.5rem;
+    /* text-indent: 2.5rem; */
     text-align: justify;
 }
 main div section > p:last-child{
@@ -494,3 +498,37 @@ main .home .home-stats{
     margin: 0;
     line-height: normal;
 }
+
+/* INICIO: CSS da pagina de PORTIFOLIO */
+
+.portifolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.portifolio .card-portifolio {
+    width: calc(100% - 2rem);
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+.portifolio .card-portifolio .card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.portifolio .card-portifolio .card-body .card-img{
+    width: 50%;
+    background-color: #999;
+}
+
+.portifolio .card-portifolio .card-footer{
+    padding: 1rem 1.5rem 0;
+}
+
+
+/* FIM: CSS da pagina de PORTIFOLIO */
