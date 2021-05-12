@@ -6,6 +6,14 @@ page.addEventListener('click', function(e){
     
     let tagA = (e.target.tagName == "I") ? e.target.parentElement : e.target
 
+    let tagsA = document.querySelectorAll('header nav a')
+
+    for(let index=0; index < tagsA.length; index++){
+        tagsA[index].classList.remove('active')
+    }
+
+    tagA.classList.add('active')
+
     let page = tagA.attributes['page'].value
 
     let pagesMain = document.querySelectorAll('main > div')
@@ -20,4 +28,5 @@ page.addEventListener('click', function(e){
     pageActive.classList.remove('page')
 
 })
+
 

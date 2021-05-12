@@ -69,6 +69,12 @@ footer{
     display: none!important;
 }
 
+.active{
+    border-bottom: 2px solid #31007c;
+    /* background-color: #666; */
+    /* box-shadow: #666 0px 0px 10px 5px; */
+}
+
 .perfil {
     display: flex;
     flex-direction: column;
@@ -208,6 +214,8 @@ header nav div ul li {
 header nav div ul li a{
     padding: .5rem;
     text-align: center;
+    height: 100%;
+    line-height: 2rem;
 }
 
 main div h2,
