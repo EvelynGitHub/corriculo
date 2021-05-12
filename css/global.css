@@ -282,6 +282,7 @@ main .home .home-stats{
 .card{
     min-width: 230px;
     min-height: 200px;
+    height: fit-content;
     margin: 1rem;
     padding: .5rem;
     background: #fff;
@@ -307,6 +308,7 @@ main .home .home-stats{
     text-align: justify;
     text-indent: 0;
     line-height: 1.2rem;
+    width: 100%;
 }
 
 .tecnologia{
