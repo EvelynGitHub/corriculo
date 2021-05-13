@@ -1,6 +1,10 @@
-let page = document.querySelector('header nav');
+let page = document.querySelectorAll('header nav a[page]');
+let btnBars = document.querySelector('header nav .menu-toggle')
+let menu = document.querySelector('#menu')
 
-page.addEventListener('click', function(e){
+page.forEach( navPage => navPage.addEventListener('click', showPage, false))
+
+function showPage(e){
 
     if (e.target.tagName != "A" && e.target.parentElement.tagName != "A") return;
     
@@ -19,14 +23,19 @@ page.addEventListener('click', function(e){
     let pagesMain = document.querySelectorAll('main > div')
 
     for(let index=0; index < pagesMain.length; index++){
-        pagesMain[index].setAttribute('hidden', true)
         pagesMain[index].classList.add('page')
     }
 
     let pageActive = document.querySelector('main .'+page)
-    pageActive.removeAttribute('hidden')
     pageActive.classList.remove('page')
 
+}
+
+btnBars.addEventListener('click', function (e) {
+    e.preventDefault()
+    menu.classList.toggle('open')
 })
 
-
+menu.addEventListener('', function (e) {
+    console.log("saiu o");
+})
