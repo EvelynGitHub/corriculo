@@ -535,6 +535,12 @@ main .home .home-stats{
 .portifolio .card-portifolio .card-body .card-img{
     width: 50%;
     background-color: #999;
+    padding: auto 0;
+    margin: auto 0;
+}
+
+.portifolio .card-portifolio .card-body .card-img img{
+    width: 100%;
 }
 
 .portifolio .card-portifolio .card-footer{
@@ -564,6 +570,33 @@ main .home .home-stats{
 /* FIM: CSS da pagina de CONTATO */
 
 /* INICIO: CSS da responsividade */
+@media screen and (max-width: 950px) {
+
+    .home-stats .img-stats{
+        width: 95%;
+    }
+
+    .tecnologia .tec-card{
+        width: 95%;
+    }
+
+    .portifolio .card-portifolio .card-body{
+        flex-direction: column;
+    }
+    
+    .portifolio .card-portifolio .card-body .card-img{
+        width: 100%;
+        background-color: #999;
+        padding: auto 0;
+        margin: auto 0;
+    }
+    
+    .portifolio .card-portifolio .card-body .card-img img{
+        width: 100%;
+    }
+
+}
+
 @media screen and (max-width: 770px) {
 
     html{
@@ -618,14 +651,6 @@ main .home .home-stats{
         margin: .5rem;
         margin-left: 0;
     }
-
-    .home-stats .img-stats{
-        width: 95%;
-    }
-
-    .tecnologia .tec-card{
-        width: 95%;
-    }
     
     footer{
         height: 50px;
@@ -671,5 +696,14 @@ main .home .home-stats{
         box-shadow: #666 0px 10px 10px -5px;
         width: 100%;
     }
+
+    .resumo section .resume-container {
+        flex-direction: column;
+    }
+
+    .resumo section .resume-container span{
+        width: auto;
+    }
+
 }
 /* FIM: CSS da responsividade */
