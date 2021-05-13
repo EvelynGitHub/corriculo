@@ -71,8 +71,6 @@ footer{
 
 .active{
     border-bottom: 2px solid #31007c;
-    /* background-color: #666; */
-    /* box-shadow: #666 0px 0px 10px 5px; */
 }
 
 .perfil {
@@ -498,7 +496,7 @@ main .home .home-stats{
 }
 
 .resume-container .resumo-description summary{
-    font-size: .8rem;
+    font-size: .9rem;
     color: #222;
     margin-bottom: .8rem;
     cursor: pointer;
@@ -564,3 +562,114 @@ main .home .home-stats{
 }
 
 /* FIM: CSS da pagina de CONTATO */
+
+/* INICIO: CSS da responsividade */
+@media screen and (max-width: 770px) {
+
+    html{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    body {
+        width: 100%;
+        background-color: rgba(238, 238, 238, 0.548);
+    
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+        gap: 1rem;
+        padding: .5rem;
+    
+    }
+
+    aside{
+        background-color:#ddd;
+    
+        max-height: calc(100% - 2rem);
+        min-height: calc(100% - 2rem);
+
+        position: relative;
+
+        top: 0;
+    }
+
+    header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 1px; 
+        box-shadow: #666 0px 10px 10px -5px;
+    }
+
+    .perfil .perfil-info{
+        flex-direction: row;
+    }
+
+    .perfil .perfil-info .perfil-personal{
+        width: 90%;
+    }
+
+    .perfil .perfil-info .perfil-social {
+        flex-direction: column;
+        height: auto;
+        width: max(10%, 3rem);
+        margin: .5rem;
+        margin-left: 0;
+    }
+
+    .home-stats .img-stats{
+        width: 95%;
+    }
+
+    .tecnologia .tec-card{
+        width: 95%;
+    }
+    
+    footer{
+        height: 50px;
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    #menu{
+        height: auto;
+    }
+
+    header nav div ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0; 
+    }
+    header nav div ul li {
+        display: block;
+        margin: .5rem;
+        height: 100%;
+        width: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+
+    header nav div #menu li a {
+        width: 100%;
+        display: flex;
+        line-height: 2rem;
+    }
+
+    header nav .menu-toggle {
+        display: flex; 
+    }
+
+    .open{
+        display: inline;
+
+        background-color: #FFF;
+        box-shadow: #666 0px 10px 10px -5px;
+        width: 100%;
+    }
+}
+/* FIM: CSS da responsividade */
