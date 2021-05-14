@@ -240,7 +240,7 @@ main div hr{
 
 main div p {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     /* text-indent: 2.5rem; */
     text-align: justify;
@@ -715,6 +715,20 @@ main .home .home-stats{
         word-wrap: break-word;
         word-break: keep-all;
         font-size: clamp(1rem, -0.8750rem + 8.3333vw, 3.5rem);
+    }
+
+
+    .home-cards .list-cards {
+        padding: 0;
+        margin: 0;
+    }
+
+    .home-cards .list-cards .card{
+        min-width: 200px;
+    }
+
+    footer{
+        text-align: center;
     }
 
 }
