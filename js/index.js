@@ -29,6 +29,8 @@ function showPage(e){
     let pageActive = document.querySelector('main .'+page)
     pageActive.classList.remove('page')
 
+    menu.classList.remove('open')
+
 }
 
 btnBars.addEventListener('click', function (e) {
@@ -36,6 +38,6 @@ btnBars.addEventListener('click', function (e) {
     menu.classList.toggle('open')
 })
 
-menu.addEventListener('', function (e) {
+menu.addEventListener('blur', function (e) {
     console.log("saiu o");
 })
