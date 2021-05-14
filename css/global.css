@@ -705,5 +705,15 @@ main .home .home-stats{
         width: auto;
     }
 
+    .contato .contato-area {
+        width: calc(100% - 2rem);
+        padding: .5rem;
+    }
+    
+    .contato .contato-area .contato-item p{
+        text-overflow: clip;
+        font-size: clamp(1rem, -0.8750rem + 8.3333vw, 3.5rem);
+    }
+
 }
 /* FIM: CSS da responsividade */
