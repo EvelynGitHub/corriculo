@@ -15,7 +15,8 @@ html{
 
 body{
     width: 100%;
-    background-color: rgba(238, 238, 238, 0.548);
+    /* background-color: rgba(238, 238, 238, 0.548); */
+    background-color: var(--color-background);
 
     display: grid;
     grid-template:
@@ -33,6 +34,7 @@ body{
 header{
     grid-area: header;
     background-color: #ddd;
+    background-color: var(--color-secondary);
     height: 50px;
 }
 
@@ -50,13 +52,15 @@ aside{
 
 main{
     grid-area: main;
-    background-color: #fff;
+    background-color: #ebe9e952;
 }
 
 footer{
     grid-area: footer;
-    background-color: #ddd;
     grid-column-start: 2;
+
+    background-color: var(--color-primary);
+    color: var(--color-background);
 
     display: flex;
     justify-content: center;
@@ -70,7 +74,7 @@ footer{
 }
 
 .active{
-    border-bottom: 2px solid #31007c;
+    border-bottom: 3px solid var(--color-sub-primary);
 }
 
 .perfil {
@@ -80,8 +84,12 @@ footer{
 }
 
 .perfil-header{
-    background-color: #ccc;
-    height: 30%;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    text-shadow: var(--text-shadow);
+    padding-bottom: .5rem;
+    min-height: 30%;
+    height: auto;
     text-align: center;
 }
 
@@ -90,30 +98,31 @@ footer{
     height: 115px;
     text-align: center;
 }
+
 .perfil-header .perfil-photo img{
     height: 100%;
     border-radius: 60px;
-    /* border-image: fill; */
-    /* border-color: 2px solid #fff; */
 }
+
 .perfil-header h4 {
     font-weight: normal;
     font-size: 1rem;
 }
-
 
 .perfil-info{
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--color-primary);
+    /* text-shadow: var(--text-shadow) */
 }
 
 .perfil-personal {
     margin: .5rem;
     padding: .3rem;
-    height: 60%;
-    background-color: #eee;
+    height: auto;
+    background-color: var(--color-secondary);
     font-size: .85rem;
     position: relative;
 
@@ -126,6 +135,8 @@ footer{
     list-style: none ;
     margin-left: .2rem;
     text-align: left;
+    color: var(--color-background);
+    font-size: .95rem;
 }
 
 .perfil-personal ul li{
@@ -149,8 +160,8 @@ footer{
 
 .perfil-social {
     height: 50px;
-    background-color: #ccc;
-
+    background-color: var(--color-primary);
+    border-top: 2px solid var(--color-secondary);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -159,7 +170,7 @@ footer{
 .perfil-social a{
     text-decoration: none;
     font-size: 2rem;
-    color: #222;
+    color: var(--color-background);
 }
 
 header nav {
@@ -170,15 +181,18 @@ header nav {
 }
 
 header nav a{
-    color: #222;
+    color: var(--color-background);
+    text-shadow: var(--text-shadow);
     text-decoration: none;
     font-size: 1.3rem;
+    font-weight: 700;
     text-align: center;
 }
 header nav .menu-home{
     height: 100%;
     width: 50px;
-    background-color: #999;
+    background-color: var(--color-primary);
+    /* color: var(--color-background); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,8 +489,8 @@ main .home .home-stats{
     height: 8px;
     width: 8px;
     border-radius: 4px;
-    border: 2px solid #444;
-    background: #999;
+    border: 2px solid var(--color-secondary);
+    background: var(--color-background);
     display: inline-flex;
     margin-right: 1rem;
 }
@@ -497,9 +511,14 @@ main .home .home-stats{
 
 .resume-container .resumo-description summary{
     font-size: .9rem;
-    color: #222;
+    color: var(--color-secondary);
+    text-decoration: underline 2px var(--color-primary);
     margin-bottom: .8rem;
     cursor: pointer;
+}
+
+.resume-container .resumo-description summary::marker{
+    color: var(--color-primary);
 }
 
 .resume-container .resumo-description p{
@@ -607,7 +626,6 @@ main .home .home-stats{
 
     body {
         width: 100%;
-        background-color: rgba(238, 238, 238, 0.548);
     
         display: flex;
         flex-direction: column;
@@ -619,8 +637,6 @@ main .home .home-stats{
     }
 
     aside{
-        background-color:#ddd;
-    
         max-height: calc(100% - 2rem);
         min-height: calc(100% - 2rem);
 
@@ -632,7 +648,7 @@ main .home .home-stats{
     header{
         position: -webkit-sticky;
         position: sticky;
-        top: 1px; 
+        top: 0; 
         box-shadow: #666 0px 10px 10px -5px;
     }
 
@@ -642,6 +658,7 @@ main .home .home-stats{
 
     .perfil .perfil-info .perfil-personal{
         width: 90%;
+        font-size: clamp(1rem, -0.8750rem + 4.3333vw, 2rem);
     }
 
     .perfil .perfil-info .perfil-social {
@@ -650,6 +667,7 @@ main .home .home-stats{
         width: max(10%, 3rem);
         margin: .5rem;
         margin-left: 0;
+        border-top: none;
     }
     
     footer{
@@ -662,6 +680,10 @@ main .home .home-stats{
 @media screen and (max-width: 450px) {
     #menu{
         height: auto;
+    }
+
+
+    header nav a{
     }
 
     header nav div ul {
@@ -683,6 +705,8 @@ main .home .home-stats{
         width: 100%;
         display: flex;
         line-height: 2rem;
+        color: var(--color-font-primary);
+        text-shadow: none;
     }
 
     header nav .menu-toggle {
