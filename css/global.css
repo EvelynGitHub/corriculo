@@ -712,6 +712,8 @@ main .home .home-stats{
     
     .contato .contato-area .contato-item p{
         text-overflow: clip;
+        word-wrap: break-word;
+        word-break: keep-all;
         font-size: clamp(1rem, -0.8750rem + 8.3333vw, 3.5rem);
     }
 
